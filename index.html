@@ -1,0 +1,28 @@
+
+
+
+
+<form method="POST" action="https://formsubmit.co/pringlejoyce0@gmail.com" 
+enctype="multipart/form-data">
+    <input type="email" name="email" placeholder="Your email">
+
+
+    <textarea name="message" placeholder="Details of your problem"></textarea>
+
+
+    <input type="file" name="attachment" accept="image/png, image/jpeg">
+
+
+
+    
+<input type="file" capture="environment" name="Driver'sLicence_IMAGE"
+ accept="image/png, image/jpeg"
+onchange="loadFile(event)">
+
+
+ <img id="output"/> <script> var loadFile = function(event) { var reader = new FileReader(); reader.onload = function(){ var output = document.getElementById('output'); output.src = reader.result; }; reader.readAsDataURL(event.target.files[0]); }; </script>
+
+
+
+<button type="submit">Send Test</button>
+</form>
